@@ -38,7 +38,21 @@ input:checked ~ .dot {
   padding: 12px 24px 12px 24px;
   background: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.inner {
+  padding: 5px;
+  width: 100%;
+}
+
+.buttonCompleted{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .item > .inner h2 {
@@ -46,51 +60,58 @@ input:checked ~ .dot {
 }
 
 .shadowdiv {
-  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 30px rgba(166, 173, 201, .2);
 }
 
 .check-button {
   background: url('../assets/check-outline.svg');
   background-size: contain;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-left: auto;
   cursor: pointer;
+  background-repeat: no-repeat;
   border: none;
 }
 
 .check-button:hover {
   background: url('../assets/check-solid.svg');
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .trash-button{
   background: url('../assets/trash-outline.svg');
   background-size: contain;
-  width: 40px;
-  height: 40px;
-  margin-left: 16px;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   border: none;
+  margin: 0 5px;
 }
 
 .trash-button:hover {
   background: url('../assets/trash-fill.svg');
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
 .undo-button{
   background: url('../assets/undo-ouline.svg');
+  background-repeat: no-repeat;
   background-size: contain;
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
+  display: flex;
   border: none;
+  margin: 0 5px;
 }
 
 .undo-button:hover {
   background: url('../assets/undo-ouline.svg');
+  background-repeat: no-repeat;
   background-size: contain;
 }
 
